@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="fmF-be-MTy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -678,7 +678,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-165" y="-285"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -699,15 +699,15 @@
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="-162" y="-41"/>
         </scene>
-        <!--Tab View Controller-->
+        <!--Took Kit View Controller-->
         <scene sceneID="VEk-aL-NlB">
             <objects>
-                <tabViewController id="fmF-be-MTy" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="fmF-be-MTy" customClass="TookKitViewController" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem identifier="" id="UIg-zM-Lrl"/>
-                        <tabViewItem identifier="" id="mpC-EJ-X3B"/>
+                        <tabViewItem label="工具箱" identifier="" id="mpC-EJ-X3B"/>
+                        <tabViewItem label="实验室" id="z52-eP-NTs"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="ZtM-ex-SrI">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -719,31 +719,18 @@
                     </tabView>
                     <connections>
                         <outlet property="tabView" destination="ZtM-ex-SrI" id="drM-5n-ClS"/>
-                        <segue destination="JK4-MB-hfl" kind="relationship" relationship="tabItems" id="Hdc-k2-Vt7"/>
+                        <segue destination="nuB-IJ-CnZ" kind="relationship" relationship="tabItems" id="Hdc-k2-Vt7"/>
                         <segue destination="gSd-8j-ien" kind="relationship" relationship="tabItems" id="zYb-9J-8lB"/>
                     </connections>
                 </tabViewController>
                 <customObject id="AWv-uY-v6K" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="405"/>
+            <point key="canvasLocation" x="-162" y="495"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jJm-bh-UAY">
-            <objects>
-                <viewController id="JK4-MB-hfl" sceneMemberID="viewController">
-                    <view key="view" id="fGa-YP-q1S">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="kJ0-H9-Y9g" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1226" y="479"/>
-        </scene>
-        <!--View Controller-->
+        <!--Lab-->
         <scene sceneID="5ui-z8-CS3">
             <objects>
-                <viewController id="gSd-8j-ien" sceneMemberID="viewController">
+                <viewController title="Lab" id="gSd-8j-ien" sceneMemberID="viewController">
                     <view key="view" id="hqO-PG-LhN">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -751,7 +738,15 @@
                 </viewController>
                 <customObject id="pSd-Fh-Hlf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="851"/>
+            <point key="canvasLocation" x="674" y="927"/>
+        </scene>
+        <!--ToolKit-->
+        <scene sceneID="pTc-pa-Ke9">
+            <objects>
+                <controllerPlaceholder storyboardIdentifier="ToolKitSotryBoard" storyboardName="ToolKit" id="nuB-IJ-CnZ" sceneMemberID="viewController"/>
+                <customObject id="kAb-Gb-hUg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-119"/>
         </scene>
     </scenes>
 </document>
